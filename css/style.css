@@ -1,0 +1,8 @@
+.main-header{
+    display: flex;
+    justify-content: space-around;
+}
+.main-article{
+    display: flex;
+    justify-content: space-evenly;
+}
