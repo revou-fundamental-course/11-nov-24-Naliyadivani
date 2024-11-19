@@ -8,50 +8,164 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="main-logo"></div>
+        <div class="main-logo">
+            <img src="AgenkuLogo.png" alt="">
+        </div>
 
         <nav>
-            <a class="navbar" href="#">Home</a>
-            <a class="navbar" href="#">Our Package</a>
-            <a class="navbar" href="#">Call Us</a>
+            <a class="navbar" href="#home">Home</a>
+            <a class="navbar" href="#our-package">Our Package</a>
+            <a class="navbar" href="#call-action">Call Action</a>
         </nav>
     </header>
     <hr>
     <main>
-        <header class="main-article-header">
+        <header class="main-article-header" id="home">
             <h1>Your Trusted Travel Agent</h1>
             <h3>Your hapiness is our hapiness</h3>
         </header>
 
         <!-- Konten Utama -->
-        <article class="main-article">
-            <!-- konten Banner Autoslide -->
-            <section class="container-banner">
-                <div class="banner-autoslide"></div>
+        <section class="container">
+            <div class="testimonial-section">
+                <div class="banner-container">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="autoSlide1.png" alt="banner slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="autoSlide2.png" alt="banner slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="autoSlide3.png" alt="banner slide 3">
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
 
-                <p>Lorem ipsum Dolor Sit Amet Adispacing..</p>
-            </section>
-
-            <!-- form Contact Us -->
-            <section>
-                <h2>Form Contact Us</h2>
-            </section>
-        </article>
+                <div class="testimonial-author-container">
+                    <blockquote class="testimonial-quote">
+                        "Liburan jadi menyenangkan bersama Travel Agenku."
+                    </blockquote>
+                    
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://picsum.photos/200" alt="Florence Hughes">
+                        </div>
+                        <div class="author-info">
+                            <h4>Nazwa Aliya Divani</h4>
+                            <p>Mahasiswa, 21</p>
+                        </div>
+                </div>
+                <hr>
+                </div>
+        
+                <div class="benefits-section">
+                    <p class="benefits-intro">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <span class="benefit-number">1</span>
+                            <p>Your first feature, written in the form of a benefit statement.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-number">2</span>
+                            <p>Your second feature, written in the form of a benefit statement.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-number">3</span>
+                            <p>Your third feature written, in the form of a benefit statement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p class="contact-desc">Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                
+                <form class="form-container"onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label>Your Name:</label>
+                        <input type="text" id="name" placeholder="First and last name">
+                        <div id="nameError" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email Address:</label>
+                        <input type="email" id="email" placeholder="example@email.com">
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>What are you interested in?</label>
+                        <div>
+                            <select name="interest" id="interest" class="form-group-select">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                            <div id="interestError" class="error"></div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">SEND</button>
+                </form>
+            </div>
+        </section>
 
         <!-- konten Our Package -->
-        <article>
-            <header class="our-package-header">
-                <h1>Our Package</h1>
-            </header>
-
-            <section class="our-package-content">
-                <h1>Konten Our Package</h1>
-            </section>
-        </article>
+        <h2 class="package-header" id="our-package">Our Package</h2>
+        <section class="packages">
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="icon">🏖️</div>
+                    <h3>Bali</h3>
+                    <p>Travel dan wisata di Bali.<br> Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card">
+                    <div class="icon">🗾</div>
+                    <h3>Japan</h3>
+                    <p>Travel dan wisata di Japan. <br> Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card">
+                    <div class="icon">🌆</div>
+                    <h3>Singapore</h3>
+                    <p>Travel dan wisata di Singapore.<br>Clean and beauty, Singapore is known for its cleanliness, modern architecture, and lush gardens</p>
+                </div>
+                <div class="package-card">
+                    <div class="icon">⛰️</div>
+                    <h3>Bandung</h3>
+                    <p>Paris van java is good.<br>Famous for its cool climate, beautiful landscapes, and delicious local food.</p>
+                </div>
+                <div class="package-card">
+                    <div class="icon">🌇</div>
+                    <h3>Surabaya</h3>
+                    <p>The city of heroes never die.<br>Rich in history and a vibrant center of culture and commerce in Indonesia.</p>
+                </div>
+                <div class="package-card">
+                    <div class="icon">🌟</div>
+                    <h3>Third Feature</h3>
+                    <p>The last feature you need</p>
+                </div>
+            </div>
+        </section>
+        <section class="closing" id="call-action">
+            <h2>Your Closing Argument Headline</h2>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+            <button class="cta-button">CALL TO ACTION</button>
+        </section>
     </main>
 
     <footer>
-        <span>Made by Nazwa Aliya Divani</span>
+        <div class="logo">Made by Nazwa Aliya Divani</div>
+        <p>&copy; 2024 - All rights reserved</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
