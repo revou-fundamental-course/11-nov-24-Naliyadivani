@@ -11,17 +11,17 @@ html {
     justify-content: space-evenly;
 }
 .main-logo {
-    display: flex; /* Mengatur tata letak flex jika ada elemen lain */
-    align-items: center; /* Pusatkan logo secara vertikal */
-    justify-content: center; /* Pusatkan logo secara horizontal jika diperlukan */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     padding: 10px; 
 }
 
 .main-logo img {
-    width: 120px; /* Sesuaikan ukuran lebar */
-    height: auto; /* Mempertahankan aspek rasio gambar */
-    max-height: 50px; /* Batas tinggi maksimum jika diperlukan */
-    object-fit: contain; /* Menyesuaikan isi agar tidak terpotong */
+    width: 120px; 
+    height: auto; 
+    max-height: 50px;
+    object-fit: contain;
 }
 nav{
     display: flex;

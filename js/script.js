@@ -18,21 +18,21 @@ function validateForm(){
     let valid = true;
 
     if(name == ''){
-        document.getElementById('nameError').textContent = "Form Wajib diisi: Nama";
+        document.getElementById('nameError').textContent = "Required Form: Nama";
         valid = false;
     }
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if(email === ''){
-        document.getElementById('emailError').textContent = "Form Wajib diisi: Email";alert("Form wajib diisi: Email");
+        document.getElementById('emailError').textContent = "Required Form: Email";
         valid = false;
     } else if(!emailPattern.test(email)){
-        document.getElementById('emailError').textContent = "Gunakan email yang valid!";
+        document.getElementById('emailError').textContent = "Use a valid email!";
         valid = false;
     }
 
     if(interest === ''){
-        document.getElementById('interestError').textContent = "Form Wajib diisi: Interest";
+        document.getElementById('interestError').textContent = "Required Form: Interest";
         valid = false;
     }
 
